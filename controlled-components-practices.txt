@@ -1,0 +1,36 @@
+Controlled components
+App.jsx=<form />
+
+Form.jsx= <h1>Registration</h1>
+Then create a form <form action =''></form>
+Then take label. <label htmlFor=''></label>
+Ten take input. <input type="text" name='name' id='name' required/> lastly give attribute for required. similarly do this for email
+
+<div>
+        <label htmlFor='email'>Email </label>
+        <input type="email" name='email' id='email' required/>
+        </div>
+
+Similarly do this for password.
+
+After take button <button type='submit'>Register</button>
+
+Take css file form.module.css<div className={style.formGroup}> Each of them are added in the name,email.password.
+
+Now working with onChange. onChange is consider to be event. 
+onChange={handleNameChange}. now calling with handleNameChange.
+similarly onChange={handleEmailChange} onChange={handlePasswordChange}.
+Now call function for email,password.
+Now go to form give the attribute for onSubmit={handleSubmit}. call with handleSubmit and give e.preventDefault().
+
+control input field by using react useState or State.
+Now create a state. const [name,setName]=useState('');
+ const [email,setEmail]=useState('');
+    const [password,setPassword]=useState(''); and setName setEmail, setPassword
+
+Input field controlled by using state. give value={name} value={email} value={password}.
+
+handleSubmit=()=>{  inside the function we decleare let userInfo
+
+
+
